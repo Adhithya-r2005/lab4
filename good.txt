@@ -1,1 +1,204 @@
-hi bro wts up
+hello everyone
+
+1
+$ git --version
+$ git config --global user.name "Adhithya-r2005"
+$ git config --global user.email "adhithyarajendra@gmail.com"
+$ git config --list
+$ mkdir adhi
+$ cd adhi
+$ git init
+$ ls -a
+$ touch index.txt
+$ git status
+$ echo "good morning">index.txt
+$ cat index.txt
+$ git add index.txt
+$ git add .
+$ git commit -m "intial commit"
+$ git log
+$ git remote add origin https://github.com/Abhishekms786/lab4.git
+$ git branch -M master
+$ git push -u origin master
+$ vi index.txt
+$ cat index.txt
+$ git add index.txt
+$ git add .
+$ git commit -m "change mode"
+$ git log
+$ git push -u origin master
+$ git clone https://github.com/Abhishekms786/lab4.git
+$ git reset --hard
+
+
+
+
+
+
+
+2)))))
+
+$ mkdir git-demo-merge
+$ cd git-demo-merge
+$ git init
+$ echo "version1">file.txt
+$ git add .
+$ git commit -m "initial commit"
+$ git checkout -b feature
+$ echo "feature version">file1.txt
+$ git add .
+$ git commit -m "changed in feature"
+$ git checkout master
+$ echo "main version">file1.txt
+$ git add .
+$ git commit -m "change in main"
+$ git merge feature
+$ cat file1.txt
+$ echo "allow main and feature branch">file1.txt
+$ git add .
+$ git commit -m "resolved merge conflict"
+$ git log
+
+
+$ git clone https://github.com/Abhishekms786/lab4.222.git
+$ cd lab4.222
+$ vi good.txt
+$ git add good.txt
+$ git commit -m "added good.txt"
+$ git push origin master
+
+
+3)))))
+
+
+
+
+sudo apt update
+sudo apt install openjdk-21-jdk -y
+sudo rm jenkins.war
+sudo rm -rf ~/.Jenkins
+wget https://get.jenkins.io/war-stable/latest/jenkins.war
+java -jar jenkins.war --httpPort=8080
+ http://loacalhost:8080 #GO TO WEB
+hostname -I //
+copy tht id and paste in jenkin we site
+
+then give username and pass
+
+then go to GitHub create a new repo
+simple-jenkins-demo
+
+create a Jenkinsfile
+
+pipeline{
+  agent any
+  stages {
+    
+    stage('Clone'){
+      steps{
+        git url: "https://github.com/Adhithya-r2005/simple-jenkins-demo.git",
+          branch:"main"
+      }
+    }
+  stage('Run Script') {
+    steps {
+     sh 'chmod +x script.sh'
+     sh './script.sh'
+    }
+  }
+  }
+}
+
+
+
+create another file
+
+#! /bin /bash
+echo "hi bro wtsup"
+
+
+now Jenkins > new items > simple-jenkins-demo > done
+
+pipeline scm>git and in repo>copy thr repo url>change branch specifier to main
+
+
+then done >click build now
+
+
+
+open one more terminal then
+if 
+ngrok --version
+
+is not installd
+sudo apt update
+sudo apt install snapd -y
+sudo snap install ngrok
+
+
+then login to ngrok
+copy the token displayed in dashboard
+paste that in the terminal
+
+ngrok http 8080
+
+u get a forwarding link copy that 
+
+
+and go to git hub>setting>webhook>add>for that url paste the terminal link
+followed by /github-webhook/
+
+content type application/jason>then add
+
+
+
+then go to Jenkins trigger click
+GitHub hook trigger for gitscm olling>done
+
+
+
+thats it u create new file followed by echo "">comm
+then in Jenkins it auto builds
+
+
+
+extra for modification
+
+
+pipeline{
+agent any
+
+stages{
+
+stage('Clone'){
+steps{
+git url: "https://github.com/usernameislol12/program3.git", branch:"main"
+}
+}
+
+stage('Run Script'){
+steps{
+sh 'chmod +x script.sh'
+sh './script.sh'
+}
+}
+
+stage('Check Python'){
+steps{
+sh 'python3 --version'
+}
+}
+
+stage('Run Python File'){
+steps{
+sh 'python3 app.py'
+}
+}
+
+}
+}
+
+
+
+
+
