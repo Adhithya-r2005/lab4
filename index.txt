@@ -1,4 +1,6 @@
 hello everyone
+
+1
 $ git --version
 $ git config --global user.name "Adhithya-r2005"
 $ git config --global user.email "adhithyarajendra@gmail.com"
@@ -29,3 +31,4 @@ $ git clone https://github.com/Abhishekms786/lab4.git
 $ git reset --hard
 
 
+2
