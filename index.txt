@@ -31,4 +31,41 @@ $ git clone https://github.com/Abhishekms786/lab4.git
 $ git reset --hard
 
 
+
+
+
+
+
+2)))))
+
+$ mkdir git-demo-merge
+$ cd git-demo-merge
+$ git init
+$ echo "version1">file.txt
+$ git add .
+$ git commit -m "initial commit"
+$ git checkout -b feature
+$ echo "feature version">file1.txt
+$ git add .
+$ git commit -m "changed in feature"
+$ git checkout master
+$ echo "main version">file1.txt
+$ git add .
+$ git commit -m "change in main"
+$ git merge feature
+$ cat file1.txt
+$ echo "allow main and feature branch">file1.txt
+$ git add .
+$ git commit -m "resolved merge conflict"
+$ git log
+
+
+$ git clone https://github.com/Abhishekms786/lab4.222.git
+$ cd lab4.222
+$ vi good.txt
+$ git add good.txt
+$ git commit -m "added good.txt"
+$ git push origin master
+
+
 2
